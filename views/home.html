@@ -2,6 +2,20 @@
 <!--This is a comment. Comments are not displayed in the browser-->
 <html>
     <head>
+<!--El elemento "head" es un contenedor de metadatos y se coloca entre la etiqueta <html> 
+y la etiqueta <body>, importante: no confundir con HEADER !!! 
+Los siguientes elementos pueden ir dentro del elemento:<head>
+    <title> (requerido en todos los documentos HTML, es el nombre que se ve en la pestaña del navegador)
+    <style> (La etiqueta se utiliza para definir información de estilo (CSS) para un documento.)
+    <base> (La etiqueta especifica la dirección URL base y/o el destino de todas las direcciones URL relativas de un documento)
+    <link> (La etiqueta define la relación entre el documento actual y un recurso externo)
+    <meta> (La etiqueta define metadatos sobre un documento HTML. Los metadatos son datos (información) sobre datos)
+    <script> (La etiqueta se utiliza para incrustar un script del lado del cliente (JavaScript).
+            El elemento contiene instrucciones de scripting o apunta a un archivo de script externo 
+            a través del atributo src.) 
+    <noscript> (La etiqueta define un contenido alternativo que se mostrará a los usuarios que hayan deshabilitado scripts 
+            en su navegador o que tengan un navegador que no admita scripts. se puede usar en Head o body)
+            --> 
         <meta charset="UTF-8">
         <title>Bienvenidxs a MercadoLiebre</title>
 <!--Trabajamos en documentos HTML web responsive, por eso necesitamos una etiqueta "meta viewport"
@@ -11,17 +25,19 @@ del dispositivo "width=device-width" en el dispositivo que ahora estamos-->
 <!--tenemos vinculada una hoja de estilo de googlefont y 
     nuestra propia hoja de estilos que esta en la carpeta CSS y se llama style.css
     en este curso no recomendaron que trabajemos con el archivo de normalización, por eso no esta
-    entre las siguientes 3 líneas de links-->
+    entre las siguientes 3 líneas de links y linea de logos-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
-<!--acá--> 
+
     </head>
-<!--acá--> 
+<!--La etiqueta "body" define el cuerpo del documento. El elemento contiene todo el contenido de un 
+documento HTML, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.--> 
     <body>
         <header>
-<!--La etiqueta "div" define una división o una sección en un documento HTML. Tiene un comienzo y fin-->
-<!--La etiqueta se utiliza como "contenedor" para elementos HTML, que luego se diseña con CSS o se manipula con JavaScript--> 
+<!--La etiqueta "div" define una división o una sección en un documento HTML. Tiene un comienzo y fin
+    La etiqueta se utiliza como "contenedor" para elementos HTML, que luego se diseña con CSS o se 
+    manipula con JavaScript--> 
                 </div>
 <!--creamos una sección con la etiqueta "div" y a esa "etiqueta" la damos una "clase" que llamamos "form"
     luego veremos que vamos al archivo CSS y vamos a declarar form (aprox. linea 51 del style.css)-->

@@ -1,16 +1,18 @@
 /*CSS significa hojas de estilo en cascada*/
 /*Comienza siempre con *{ y márgenes y padding o relleno en cero pixeles
 El elemento "box-sizing: border-box" evita que un elemento amplie su tamaño independientemente
-que le agreguemos relleno(padding) o borde, es decir que se lo descuenta al elemento que declaramos
+que le agreguemos relleno=padding y/o borde=border, es decir que se lo descuenta al elemento que declaramos
 y no lo suma para que no supere las medidas máximas que necesitamos o definimos.*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-/*comentar*/
+/*La etiqueta "body" define el cuerpo del documento
+el elemento contiene todo el contenido de un documento HTML, como encabezados, párrafos, imágenes, hipervínculos
+tablas, listas, etc.*/
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'sans-serif';
     background-color: #ebebeb;
 }
 /*declaramos el tamaño de la tipografía de los titulos h3*/
@@ -194,7 +196,6 @@ article div.main-article{
 @media (min-width: 768px){
     main section div.products article{
         width: 50%;
-
     }
 /*comentar*/
     @media (min-width: 1280px){
