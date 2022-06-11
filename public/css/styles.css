@@ -1,0 +1,206 @@
+/*CSS significa hojas de estilo en cascada*/
+/*Comienza siempre con *{ y márgenes y padding o relleno en cero pixeles
+El elemento "box-sizing: border-box" evita que un elemento amplie su tamaño independientemente
+que le agreguemos relleno(padding) o borde, es decir que se lo descuenta al elemento que declaramos
+y no lo suma para que no supere las medidas máximas que necesitamos o definimos.*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*comentar*/
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+/*declaramos el tamaño de la tipografía de los titulos h3*/
+h3{
+    font-size: 24px;
+}
+/*declaramos */
+p{
+    font-size: 12px;
+}
+/*comentar*/
+div.top-header{
+    padding: 5%;
+}
+/*comentar*/
+header{
+    background-color: #EAC926;
+}
+/*comentar*/
+header div.logo{
+    width: 50%;
+}
+/*comentar*/
+header div.logo{
+    padding: 10px;
+}
+/*comentar*/
+header nav{
+    font-size: 12px;
+    padding: 10px;
+}
+/*comentar*/
+header ul li{
+    list-style-type: none;
+}
+/*comentar*/
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+/*  aca viene el "form" que cree en el html como "Class = "form" en el html y le doy diseño a ese contenedor: 
+    (aprox línea 28 del home.html) le estoy diciendo que tendrá tal color de fondo
+    un borde con linea de 1px de ancho, será línea sólida y color negro, y NO tendrá ningun contorno o
+    outline, que es la una línea que se dibuja alrededor de los elementos, FUERA de los bordes, 
+    para hacer que el elemento "se destaque", con color gris y un "padding o relleno" que se usa 
+    para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido.*/
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+/*comentar*/
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+/*comentar*/
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+/*comentar*/
+div.burger-menu{
+    text-align: center;
+}
+/*comentar*/
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+/*comentar*/
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+/*comentar*/
+.discount{
+    width: 70%;
+}
+/*comentar*/
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+/*comentar*/
+h3,
+.description{
+    color: #666;
+}
+/*comentar*/
+.description{
+    display: none;
+    margin-top: 20px;
+}
+/*comentar*/
+section.banner img{
+    width: 100%;
+}
+/*comentar*/
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+/*comentar*/
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+/*comentar*/
+main section article img{
+    width: 100%;
+}
+/*comentar*/
+main section article i,
+.discount{
+    color: #39b54a;
+}
+/*comentar*/
+main section article i{
+display: block;
+font-size: px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: 15px;
+}
+/*comentar*/
+main section h3{
+    margin: 20px 0px;
+}
+/*comentar*/
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position:relative;
+
+}
+/*comentar*/
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+/*comentar*/
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+/*comentar*/
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+/*comentar*/
+    main section div.products article{
+        width: auto;
+    }
+    .price, .discount {
+        width: auto;
+    }
+/*comentar*/
+@media (min-width: 768px){
+    main section div.products article{
+        width: 50%;
+
+    }
+/*comentar*/
+    @media (min-width: 1280px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+/*comentar*/
+}
