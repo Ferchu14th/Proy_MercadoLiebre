@@ -25,24 +25,39 @@ p{
 }
 /*comentar*/
 div.top-header{
+    display: flex;
+    flex-wrap: wrap;
     padding: 5%;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 /*comentar*/
 header{
     background-color: #EAC926;
 }
-/*comentar*/
-header div.logo{
+/*Clase 14:*/
+header div.logo,
+header .form{
     width: 50%;
 }
 /*comentar*/
 header div.logo{
     padding: 10px;
 }
+/*clase 14: achica el área del buscador */
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
 /*comentar*/
 header nav{
     font-size: 12px;
-    padding: 10px;
+    padding: 20px;
 }
 /*comentar*/
 header ul li{
@@ -94,6 +109,12 @@ div.burger-menu i{
     padding: 10px;
     width: 40px;
 }
+/*Clase 14: */
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
 /*comentar*/
 .price{
     font-size: 18px;
@@ -104,6 +125,7 @@ div.burger-menu i{
     width: 70%;
 }
 /*comentar*/
+.discount,
 .description{
     font-size: 16px;
     font-weight: normal;
@@ -144,7 +166,7 @@ main section article i,
 /*comentar*/
 main section article i{
 display: block;
-font-size: px;
+font-size: 16px;
 padding: 5px;
 width: 30px;
 height: 30px;
@@ -153,18 +175,21 @@ background-color: #FFF;
 border-radius: 50%;
 position: absolute;
 right: 20px;
-top: 15px;
+top: -15px;
 }
 /*comentar*/
 main section h3{
     margin: 20px 0px;
 }
-/*comentar*/
+/*clase 14: incorporamos display flex y derivados*/
 article div.main-article{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:baseline;
     border-top: 1px solid #ebebeb;
-    padding: 15px;
     position:relative;
+    padding: 15px;
 
 }
 /*comentar*/
@@ -187,17 +212,17 @@ article div.main-article{
     }
 /*comentar*/
     main section div.products article{
-        width: auto;
+        width: 45%;
     }
     .price, .discount {
-        width: auto;
-    }
-/*comentar*/
-@media (min-width: 768px){
-    main section div.products article{
         width: 50%;
     }
-/*comentar*/
+/*modeliza iPad (Tablet 758x1024)*/
+@media (min-width: 768px){
+    main section div.products article{
+        width: 45%;
+    }
+/*modeliza Generic Laptop (1280x950)*/
     @media (min-width: 1280px){
     main section div.products article{
         width: 22%;
