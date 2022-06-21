@@ -27,8 +27,9 @@ p{
 div.top-header{
     display: flex;
     flex-wrap: wrap;
-    padding: 5%;
+    padding: 10%;
 }
+/*referencia a título Comprar en vuotas y sin tarjeta de crédito con el ícono*/
 header div.top-header p{
     width: 100%;
     text-align: center;
