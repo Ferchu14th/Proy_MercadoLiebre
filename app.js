@@ -31,7 +31,7 @@ app.get('/register', (req,res)=>{
 //     console.log('servidor corriendo en el puerto 3000')
 // );
 // a partir de clase 15 lo cambia de esta manera:
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log(`Server running at http://${HOST}:${PORT}/`);
 });
 
