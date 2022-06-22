@@ -1,234 +1,276 @@
-/*CSS significa hojas de estilo en cascada*/
-/*Comienza siempre con *{ y márgenes y padding o relleno en cero pixeles
-El elemento "box-sizing: border-box" evita que un elemento amplie su tamaño independientemente
+/*IMPORTANTE: Como este proyecto se construyo dentro de un proceso de aprendizaje 
+    verán que tiene incorporadas una serie de notas a manera de comentarios explicando 
+    brevemente las funciones y conceptos más importantes de cada línea de código utilizada, 
+    a manera de tutorial*/
+
+/*CSS significa hojas de estilo en cascada por sus siglas en inglés*/
+/*Comienza siempre con *{ y márgenes y padding o relleno en cero pixeles. El elemento "box-sizing: border-box" evita que un elemento amplie su tamaño independientemente
 que le agreguemos relleno=padding y/o borde=border, es decir que se lo descuenta al elemento que declaramos
 y no lo suma para que no supere las medidas máximas que necesitamos o definimos.*/
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 /*La etiqueta "body" define el cuerpo del documento
 el elemento contiene todo el contenido de un documento HTML, como encabezados, párrafos, imágenes, hipervínculos
 tablas, listas, etc.*/
-body{
-    font-family: 'Roboto', 'sans-serif';
+body {
+    font-family: "Roboto", "sans-serif";
     background-color: #ebebeb;
 }
+
 /*declaramos el tamaño de la tipografía de los titulos h3*/
-h3{
+h3 {
     font-size: 24px;
 }
-/*declaramos */
-p{
+
+/*declaramos tamaño de la letra para los párrafos*/
+p {
     font-size: 12px;
 }
-/*comentar*/
-div.top-header{
+
+/*Le damos estilo a la clase del div top.header*/
+div.top-header {
     display: flex;
     flex-wrap: wrap;
     padding: 10%;
 }
-/*referencia a título Comprar en vuotas y sin tarjeta de crédito con el ícono*/
-header div.top-header p{
+
+/*referencia a título Comprar en cuotas y sin tarjeta de crédito con el ícono*/
+header div.top-header p {
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
-/*comentar*/
-header{
-    background-color: #EAC926;
+
+/*Le damos el color de fondo amarillo al encabezado sobre el cual van el logo e Mercado Liebre y otros textos*/
+header {
+    background-color: #eac926;
 }
-/*Clase 14:*/
+
+/*Incorporamos en la Clase 14 un formulario al cual le estamos dando formato utilizando un */
 header div.logo,
-header .form{
+header .form {
     width: 50%;
 }
+
 /*comentar*/
-header div.logo{
+header div.logo {
     padding: 10px;
 }
+
 /*clase 14: achica el área del buscador */
-header .form{
+header .form {
     display: flex;
     align-items: center;
     padding: 2px;
     font-size: 11px;
 }
+
 /*comentar*/
-header nav{
+header nav {
     font-size: 12px;
     padding: 20px;
 }
-/*comentar*/
-header ul li{
+
+/*hacemos que no se vean las viñetas de la etiqueta utilizada en el html ul li*/
+header ul li {
     list-style-type: none;
 }
-/*comentar*/
-header ul li a{
+
+/*le damos estilo a los contenidos dentro de las etiquetas ul li y a (para enlaces)*/
+header ul li a {
     text-decoration: none;
     color: #000;
 }
-/*  aca viene el "form" que cree en el html como "Class = "form" en el html y le doy diseño a ese contenedor: 
+
+/*  aca viene el "form" que cree en el html como "Class = "form" y le doy diseño a ese contenedor: 
     (aprox línea 28 del home.html) le estoy diciendo que tendrá tal color de fondo
     un borde con linea de 1px de ancho, será línea sólida y color negro, y NO tendrá ningun contorno o
     outline, que es la una línea que se dibuja alrededor de los elementos, FUERA de los bordes, 
     para hacer que el elemento "se destaque", con color gris y un "padding o relleno" que se usa 
     para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido.*/
-header .form .input{
-    background-color: #FFF;
+header .form .input {
+    background-color: #fff;
     border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
 }
-/*comentar*/
-header .form .submit{
-    background-color: #FFF6;
+
+/*fondos y bordes para las clases form y submit*/
+header .form .submit {
+    background-color: #fff6;
     border: 1px solid #000;
     color: #666;
     width: 10%;
 }
+
 /*se cancela a partir de la clase 15*/
 /*header div.top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
-*/
-/*comentar*/
-div.burger-menu{
+
+/*le doy estilo al burger-menu, lo centro con respecto al bloque*/
+div.burger-menu {
     text-align: center;
 }
-/*comentar*/
-div.burger-menu i{
-    background-color: #0044AA;
+
+/* estilos */
+div.burger-menu i {
+    background-color: #0044aa;
     border-radius: 5px;
-    color: #FFF;
+    color: #fff;
     font-size: 20px;
     height: 40px;
     margin: 10px 0px 20px 0px;
     padding: 10px;
     width: 40px;
 }
-/*Clase 14: */
+
+/*Clase 14: incorporamos todo lo relacionado a flexbox */
 div.last-visit,
-div.offers{
+div.offers {
     display: flex;
     flex-wrap: wrap;
 }
-/*comentar*/
-.price{
+
+/*dando estilo -tamaño de fonts y dimensiones- al precio de los productos en ML*/
+.price {
     font-size: 18px;
     width: 30%;
 }
-/*comentar*/
-.discount{
+
+/*dando estilo a los descuentos, en este caso ajustando ancho.*/
+.discount {
     width: 70%;
 }
+
 /*comentar*/
 .discount,
-.description{
+.description {
     font-size: 16px;
     font-weight: normal;
 }
+
 /*comentar*/
 h3,
-.description{
+.description {
     color: #666;
 }
+
 /*comentar*/
-.description{
+.description {
     display: none;
     margin-top: 20px;
 }
+
 /*comentar*/
-section.banner img{
+section.banner img {
     width: 100%;
 }
+
 /*comentar*/
-main{
+main {
     width: 90%;
     margin: 0 auto;
 }
+
 /*comentar*/
-main section article{
-    background-color: #fff;    
+main section article {
+    background-color: #fff;
     margin: 10px 0px;
 }
+
 /*comentar*/
-main section article img{
+main section article img {
     width: 100%;
 }
+
 /*comentar*/
 main section article i,
-.discount{
+.discount {
     color: #39b54a;
 }
+
 /*comentar*/
-main section article i{
-display: block;
-font-size: 16px;
-padding: 5px;
-width: 30px;
-height: 30px;
-border: 1px solid #39b54a;
-background-color: #FFF;
-border-radius: 50%;
-position: absolute;
-right: 20px;
-top: -15px;
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
+
 /*comentar*/
-main section h3{
+main section h3 {
     margin: 20px 0px;
 }
+
 /*clase 14: incorporamos display flex y derivados*/
-article div.main-article{
+article div.main-article {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items:baseline;
+    align-items: baseline;
     border-top: 1px solid #ebebeb;
-    position:relative;
+    position: relative;
     padding: 15px;
-
 }
+
 /*comentar*/
-@media (min-width: 361px){
-    main section article .description{
+@media (min-width: 361px) {
+    main section article .description {
         display: block;
     }
-/*comentar*/
-    main section article{
+
+    /*comentar*/
+    main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
+
 /*comentar*/
-    main section div.products{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-/*comentar*/
-    main section div.products article{
-        width: 45%;
-    }
-    .price, .discount {
-        width: 50%;
-    }
-/*modeliza iPad (Tablet 758x1024)*/
-@media (min-width: 768px){
-    main section div.products article{
-        width: 45%;
-    }
-/*modeliza Generic Laptop (1280x950)*/
-    @media (min-width: 1280px){
-    main section div.products article{
-        width: 22%;
-    }
+main section div.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
 /*comentar*/
+main section div.products article {
+    width: 45%;
+}
+
+.price,
+.discount {
+    width: 50%;
+}
+
+/*modeliza iPad (Tablet 758x1024)*/
+@media (min-width: 768px) {
+    main section div.products article {
+        width: 45%;
+    }
+
+    /*modeliza Generic Laptop (1280x950)*/
+    @media (min-width: 1280px) {
+        main section div.products article {
+            width: 22%;
+        }
+    }
+
+    /*comentar*/
 }

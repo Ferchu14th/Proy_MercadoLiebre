@@ -1,6 +1,17 @@
 <!DOCTYPE html>
-<!--This is a comment. Comments are not displayed in the browser-->
+<!--IMPORTANTE: Como este proyecto se construyo dentro de un proceso de aprendizaje 
+    verán que tiene incorporadas una serie de notas a manera de comentarios explicando 
+    brevemente las funciones y conceptos más importantes de cada línea de código utilizada, 
+    a manera de tutorial.--> 
 <html>
+<!--Este Proyecto de Mercado Liebre busca principalmente:
+    . Darle contenido y estructura a un sitio a través de HTML.
+    . Identificar los componentes que hacen una página web.
+    . Categorizar los subcomponentes e identificar sus usos.
+    . Integrar los distintos componentes para hacer una página web.
+    . Conocer y plasmar distintas etiquetas y reglas de estilo en un sitio web.
+    . Darle estilo y adaptación a distintos tipos de pantallas a través de CSS.
+    . Ejercitar sobre diseño de webs responsive.  -->
     <head>
 <!--El elemento "head" es un contenedor de metadatos y se coloca entre la etiqueta <html> 
 y la etiqueta <body>, importante: no confundir con HEADER !!! 
@@ -10,11 +21,7 @@ Los siguientes elementos pueden ir dentro del elemento:<head>
     <base>      (La etiqueta especifica la dirección URL base y/o el destino de todas las direcciones URL relativas de un documento)
     <link>      (La etiqueta define la relación entre el documento actual y un recurso externo)
     <meta>      (La etiqueta define metadatos sobre un documento HTML. Los metadatos son datos (información) sobre datos)
-    <script>    (La etiqueta se utiliza para incrustar un script del lado del cliente (JavaScript).
-                El elemento contiene instrucciones de scripting o apunta a un archivo de script externo 
-                a través del atributo src.) 
-    <noscript>  (La etiqueta define un contenido alternativo que se mostrará a los usuarios que hayan deshabilitado scripts 
-                en su navegador o que tengan un navegador que no admita scripts. se puede usar en Head o body)--> 
+    <script>    (La etiqueta se utiliza para incrustar un script del lado del cliente (JavaScript).--> 
         <meta charset="UTF-8">
         <title>Bienvenidxs a MercadoLiebre</title>
 <!--Trabajamos en documentos HTML web responsive, por eso necesitamos una etiqueta "meta viewport"
@@ -34,13 +41,8 @@ del dispositivo "width=device-width" en el dispositivo que ahora estamos-->
 documento HTML, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.--> 
     <body>
 <!--El elemento <header> representa un contenedor para contenido introductorio o un conjunto de vínculos de navegación.
-    Un elemento normalmente contiene: uno o más elementos de encabezado (<h1> - <h6>), logotipo o icono, información de autoría. 
-    Nota: Puede tener varios elementos en un documento HTML. Sin embargo, no se puede colocar dentro de un <footer>, <address> u otros elementos.
-        ejemplo de un header:
-    <header>
-        <h1>Main page heading here</h1>
-        <p>Posted by Fernando Riedel</p>
-    </header>-->         
+    Un elemento normalmente contiene: uno o más elementos de encabezado (<h1> - <h6>), logotipo o icono, información de autoría-->
+    
         <header> 
                 <div class="top-header">
                 <div class="logo">
@@ -62,39 +64,52 @@ https://www.w3schools.com/tags/att_input_type.asp -->
                     <div class="input">Buscar productos, marcas y más</div>
                     <div class="submit"><i class="fa fa-search"></i></div>
                 </div>
-<!--acá--> 
+<!--Utilización de íconos--> 
                 <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
-<!--acá--> 
+<!--La etiqueta <nav> define un conjunto de vínculos de navegación--> 
             <nav>
-<!--acá--> 
+<!--La etiqueta <ul> define una lista desordenada. La utilizamos junto con la etiqueta <li> para crear listas desordenadas y
+    podemos darle estilo desde CSS--> 
                 <ul>
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
-<!--acá--> 
+<!--tambien la puedo combinar con el elemento <a> </a> que me permite definir un hipervínculo, que se utiliza
+    para vincular páginas, el atributo href indica el destino del enlace, en este caso estoy vinculando desde 
+    el home a las páginas de registro y login--> 
                 <ul>
                     <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
                     <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
-<!--acá--> 
+<!--El burger-menu, llamado así por su parecido involuntario con una hamburguesa, 
+    es un botón que su función es alternar un menú o barra de navegación que permite 
+    colapsarse detrás del botón o mostrarse en la pantalla. --> 
             </nav>
             <div class="burger-menu">
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-<!--acá--> 
+<!--La etiqueta <section> </section> define una sección de un documento y admite los atributos globales y de eventos en HTML.--> 
         <section class="banner">
-            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+<!--El atributo class especifica uno o más nombres de clase para un elemento 
+    y se utiliza principalmente para apuntar a una clase en una hoja de estilos.--> 
+            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">        
+<!--La etiqueta <img> se utiliza para incrustar una imagen en una página HTML.
+    Tiene dos atributos obligatorios: src: especifica la ruta a la imagen y 
+    alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede mostrar--> 
         </section>
         <main>
             <section class="last-visit">
                 <h3>Basado en tu última visita</h3>
                 <div class="products">
-<!--acá--> 
+<!--La etiqueta <article> </article> especifica contenido independiente. 
+    Un artículo debe tener sentido por sí solo y debe ser posible distribuirlo independientemente del resto
+    del sitio. Caso de uso habitual: Publicación en el foro, Entrada de blog, Noticia y Cuadro de Producto como
+    el usado en este proyecto--> 
                     <article>
                         <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
                         <div class="main-article">
@@ -103,8 +118,8 @@ https://www.w3schools.com/tags/att_input_type.asp -->
                             <p class="discount">40% off</p>
                             <h4 class="description">Cafetera Moulinex</h4>
                         </div>
-<!--acá--> 
                     </article>
+                    
                     <article>
                         <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
                         <div class="main-article">
@@ -114,7 +129,7 @@ https://www.w3schools.com/tags/att_input_type.asp -->
                             <h4 class="description">MacBook Pro 2019</h4>
                         </div>
                     </article>
-<!--acá--> 
+                    
                     <article>
                         <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img">
                         <div class="main-article">
@@ -123,8 +138,8 @@ https://www.w3schools.com/tags/att_input_type.asp -->
                             <p class="discount">10% off</p>
                             <h4 class="description">Samsung Galaxy S10</h4>
                         </div>
-<!--acá--> 
                     </article>
+                    
                     <article>
                         <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
                         <div class="main-article">
@@ -133,11 +148,11 @@ https://www.w3schools.com/tags/att_input_type.asp -->
                             <p class="discount">5% off</p>
                             <h4 class="description">SmartTv Samsung 43"</h4>
                         </div>
-<!--acá--> 
                     </article>
+
                 </div>
             </section>
-<!--acá--> 
+<!--sección de ofertas en Mercado Liebre--> 
             <section class="offers">
                 <h3>Ofertas</h3>
                 <div class="products">
@@ -180,7 +195,9 @@ https://www.w3schools.com/tags/att_input_type.asp -->
                 </div>  
             </section>
         </main>
-<!--acá--> 
+<!--La etiqueta footer define un pie de página para un documento o sección.
+Un elemento normalmente contiene: información de autoría, información sobre derechos de autor,
+información de contacto, mapa del sitio, volver a los enlaces principales y documentos relacionados--> 
         <footer>
             
         </footer>
