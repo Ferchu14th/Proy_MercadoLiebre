@@ -274,17 +274,14 @@ div.top-header {
 en una misma linea de bloques nowrap*/
     @media (min-width: 758px) {
 
-        div .top-header {
-            display: flex;
-            flex-wrap: wrap;
-        }
+        
 
         div .logo {
             width: 30%;
         }
 
         div .form {
-            width: 30%;
+            width: 50%;
         }
 
         div .centro {
