@@ -35,11 +35,12 @@ p {
 div.top-header {
     display: flex;
     flex-wrap: wrap;
-    padding: 10%;
+    align-items: center;
+    padding: 5px;
 }
 
 /*referencia a título Comprar en cuotas y sin tarjeta de crédito con el ícono*/
-header div.top-header p {
+div.top-header p {
     width: 100%;
     text-align: center;
     margin-top: 10px;
@@ -56,20 +57,47 @@ header .form {
     width: 50%;
 }
 
-/*comentar*/
 header div.logo {
     padding: 10px;
 }
 
 /*clase 14: achica el área del buscador */
+/*fondos y bordes para las clases form y imput, button y busca*/
 header .form {
     display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
+    align-items: stretch;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    width: 50%;
 }
 
-/*comentar*/
+header .input-search {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+header .button-search {
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+header .centro {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+/*Estilos para el nav*/
 header nav {
     font-size: 12px;
     padding: 20px;
@@ -86,33 +114,10 @@ header ul li a {
     color: #000;
 }
 
-/*  aca viene el "form" que cree en el html como "Class = "form" y le doy diseño a ese contenedor: 
-    (aprox línea 28 del home.html) le estoy diciendo que tendrá tal color de fondo
-    un borde con linea de 1px de ancho, será línea sólida y color negro, y NO tendrá ningun contorno o
-    outline, que es la una línea que se dibuja alrededor de los elementos, FUERA de los bordes, 
-    para hacer que el elemento "se destaque", con color gris y un "padding o relleno" que se usa 
-    para crear espacio alrededor del contenido de un elemento, dentro de cualquier borde definido.*/
-header .form .input {
-    background-color: #fff;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-/*fondos y bordes para las clases form y submit*/
-header .form .submit {
-    background-color: #fff6;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-/*se cancela a partir de la clase 15*/
-/*header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+/* Centrado para el main del la clase register del register.html */
+.register {
+    display: flex;
+    justify-content: center
 }
 
 /*le doy estilo al burger-menu, lo centro con respecto al bloque*/
@@ -240,37 +245,53 @@ article div.main-article {
     }
 }
 
-/*comentar*/
-main section div.products {
+div.top-header {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
-/*comentar*/
-main section div.products article {
-    width: 45%;
-}
-
-.price,
-.discount {
-    width: 50%;
-}
-
-/*modeliza iPad (Tablet 758x1024)*/
-@media (min-width: 768px) {
-    main section div.products article {
-        width: 45%;
-    }
-
-    /*modeliza Generic Laptop (1280x950)*/
-    @media (min-width: 1280px) {
-        main section div.products article {
-            width: 22%;
-        }
+    /*comentar*/
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     /*comentar*/
-}
+    main section div.products article {
+        width: 45%;
+
+    }
+
+    .price,
+    .discount {
+        width: 50%;
+    }
+
+    /*modeliza iPad (Tablet 758x1024) a partir de 758 dejamos logo, barra de busqueda y compre en cuotas
+en una misma linea de bloques nowrap*/
+    @media (min-width: 758px) {
+
+        div .top-header {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div .logo {
+            width: 30%;
+        }
+
+        div .form {
+            width: 30%;
+        }
+
+        div .centro {
+            width: 40%;
+        }
+
+        main section div.products article {
+            width: 22%;
+
+        }
+    }

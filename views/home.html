@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--IMPORTANTE: Como este proyecto se construyo dentro de un proceso de aprendizaje 
-    verán que tiene incorporadas una serie de notas a manera de comentarios explicando 
+    verán que tiene incorporadas una serie de notas en forma de comentarios explicando 
     brevemente las funciones y conceptos más importantes de cada línea de código utilizada, 
-    a manera de tutorial.--> 
+    a manera de tutorial.-->
 <html>
 <!--Este Proyecto de Mercado Liebre busca principalmente:
     . Darle contenido y estructura a un sitio a través de HTML.
@@ -12,8 +12,9 @@
     . Conocer y plasmar distintas etiquetas y reglas de estilo en un sitio web.
     . Darle estilo y adaptación a distintos tipos de pantallas a través de CSS.
     . Ejercitar sobre diseño de webs responsive.  -->
-    <head>
-<!--El elemento "head" es un contenedor de metadatos y se coloca entre la etiqueta <html> 
+
+<head>
+    <!--El elemento "head" es un contenedor de metadatos y se coloca entre la etiqueta <html> 
 y la etiqueta <body>, importante: no confundir con HEADER !!! 
 Los siguientes elementos pueden ir dentro del elemento:<head>
     <title>     (requerido en todos los documentos HTML, es el nombre que se ve en la pestaña del navegador)
@@ -21,187 +22,192 @@ Los siguientes elementos pueden ir dentro del elemento:<head>
     <base>      (La etiqueta especifica la dirección URL base y/o el destino de todas las direcciones URL relativas de un documento)
     <link>      (La etiqueta define la relación entre el documento actual y un recurso externo)
     <meta>      (La etiqueta define metadatos sobre un documento HTML. Los metadatos son datos (información) sobre datos)
-    <script>    (La etiqueta se utiliza para incrustar un script del lado del cliente (JavaScript).--> 
-        <meta charset="UTF-8">
-        <title>Bienvenidxs a MercadoLiebre</title>
-<!--Trabajamos en documentos HTML web responsive, por eso necesitamos una etiqueta "meta viewport"
+    <script>    (La etiqueta se utiliza para incrustar un script del lado del cliente (JavaScript).-->
+    <meta charset="UTF-8">
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <!--Trabajamos en documentos HTML web responsive, por eso necesitamos una etiqueta "meta viewport"
 que se encarga de decirle al navegador que nosotros queremos que el contenido "content" se adapte al ancho
 del dispositivo "width=device-width" en el dispositivo que ahora estamos-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--tenemos vinculada una hoja de estilo de googlefont y 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tenemos vinculada una hoja de estilo de googlefont y 
     nuestra propia hoja de estilos que esta en la carpeta CSS y se llama style.css
     en este curso no recomendaron que trabajemos con el archivo de normalización, por eso no esta
     entre las siguientes 3 líneas de links y la de font-awesome es la linea de fuentes de iconos-->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-    </head>
-<!--La etiqueta (tag) "body" define el cuerpo del documento. El elemento contiene todo el contenido de un 
-documento HTML, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.--> 
-    <body>
-<!--El elemento <header> representa un contenedor para contenido introductorio o un conjunto de vínculos de navegación.
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+    <!--La etiqueta (tag) "body" define el cuerpo del documento. El elemento contiene todo el contenido de un 
+documento HTML, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.-->
+
+<body>
+    <!--El elemento <header> representa un contenedor para contenido introductorio o un conjunto de vínculos de navegación.
     Un elemento normalmente contiene: uno o más elementos de encabezado (<h1> - <h6>), logotipo o icono, información de autoría-->
-    
-        <header> 
-                <div class="top-header">
-                <div class="logo">
-                    <img src="images/logo-mercado-liebre.svg" width=100% alt="Logo de MercadoLiebre"> 
-                </div>
-<!--La etiqueta "div" define una división o una sección en un documento HTML. Tiene un comienzo y fin
-    La etiqueta se utiliza como "contenedor" para elementos HTML, que luego se diseña con CSS o se 
-    manipula con JavaScript--> 
+
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <a href="/">
+                <img src="images/logo-mercado-liebre.svg" width=100% alt="Logo de Mercado Liebre">
+                </a>
             </div>
-<!--creamos una sección con la etiqueta "div" y a esa "etiqueta" le damos una "clase" que llamamos "form"
+            <!--La etiqueta "div" define una división o una sección en un documento HTML. Tiene un comienzo y fin
+    La etiqueta se utiliza como "contenedor" para elementos HTML, que luego se diseña con CSS o se 
+    manipula con JavaScript-->
+            <!--creamos una sección con la etiqueta "div" y a esa "etiqueta" le damos una "clase" que llamamos "form"
     luego veremos que vamos al archivo CSS y vamos a declarar form (aprox. linea 51 del style.css)
     La etiqueta se diseña fácilmente mediante el atributo "class" o "id".-->
-                <div class="form" action="#" method="GET"> 
-<!--La etiqueta <input> especifica un campo de entrada donde el usuario puede introducir datos.
+            <div class="form" action="#" method="GET">
+            <!--La etiqueta <input> especifica un campo de entrada donde el usuario puede introducir datos.
 El elemento se puede mostrar de varias maneras, dependiendo del atributo type
 Los diferentes tipos de entrada son los siguientes: <input type="radio"><input type="file">
 <input type="password"> <input type="submit" value="Submit"> ¡Mira el atributo type para ver ejemplos para cada tipo de entrada!
-https://www.w3schools.com/tags/att_input_type.asp --> 
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
-<!--Utilización de íconos--> 
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+https://www.w3schools.com/tags/att_input_type.asp -->
+            <input class="input-search" type="text" placeholder="Buscar productos, marcas y más">
+            <button class="button-search"><i class="fa fa-search"></i></button>
             </div>
-<!--La etiqueta <nav> define un conjunto de vínculos de navegación--> 
-            <nav>
-<!--La etiqueta <ul> define una lista desordenada. La utilizamos junto con la etiqueta <li> para crear listas desordenadas y
-    podemos darle estilo desde CSS--> 
-                <ul>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-<!--tambien la puedo combinar con el elemento <a> </a> que me permite definir un hipervínculo, que se utiliza
-    para vincular páginas, el atributo href indica el destino del enlace, en este caso estoy vinculando desde 
-    el home a las páginas de registro y login--> 
-                <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-<!--El burger-menu, llamado así por su parecido involuntario con una hamburguesa, 
-    es un botón que su función es alternar un menú o barra de navegación que permite 
-    colapsarse detrás del botón o mostrarse en la pantalla. --> 
-            </nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
-            </div>
-        </header>
-<!--La etiqueta <section> </section> define una sección de un documento y admite los atributos globales y de eventos en HTML.--> 
-        <section class="banner">
-<!--El atributo class especifica uno o más nombres de clase para un elemento 
-    y se utiliza principalmente para apuntar a una clase en una hoja de estilos.--> 
-            <img src="images/img-home-banner.jpg" alt="Banner de ofertas">        
-<!--La etiqueta <img> se utiliza para incrustar una imagen en una página HTML.
-    Tiene dos atributos obligatorios: src: especifica la ruta a la imagen y 
-    alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede mostrar--> 
-        </section>
-        <main>
-            <section class="last-visit">
-                <h3>Basado en tu última visita</h3>
-                <div class="products">
-<!--La etiqueta <article> </article> especifica contenido independiente. 
-    Un artículo debe tener sentido por sí solo y debe ser posible distribuirlo independientemente del resto
-    del sitio. Caso de uso habitual: Publicación en el foro, Entrada de blog, Noticia y Cuadro de Producto como
-    el usado en este proyecto--> 
-                    <article>
-                        <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$6.770</p>
-                            <p class="discount">40% off</p>
-                            <h4 class="description">Cafetera Moulinex</h4>
-                        </div>
-                    </article>
-                    
-                    <article>
-                        <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$230.000</p>
-                            <p class="discount">20% off</p>
-                            <h4 class="description">MacBook Pro 2019</h4>
-                        </div>
-                    </article>
-                    
-                    <article>
-                        <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$70.500</p>
-                            <p class="discount">10% off</p>
-                            <h4 class="description">Samsung Galaxy S10</h4>
-                        </div>
-                    </article>
-                    
-                    <article>
-                        <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$23.200</p>
-                            <p class="discount">5% off</p>
-                            <h4 class="description">SmartTv Samsung 43"</h4>
-                        </div>
-                    </article>
+            <!--Utilización de íconos-->
+            <p class="centro"><i class="fas fa-hand-holding-usd">
+            </i>Comprá en cuotas y sin tarjeta de crédito
+            </p>
+        </div>
+            <!--La etiqueta <nav> define un conjunto de vínculos de navegación-->
+        <nav>
+            <!--La etiqueta <ul> define una lista desordenada. La utilizamos junto con la etiqueta <li> para crear listas desordenadas y
+                odemos darle estilo desde CSS-->
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <!--tambien la puedo combinar con el elemento <a> </a> que me permite definir un hipervínculo, que se utiliza
+                para vincular páginas, el atributo href indica el destino del enlace, en este caso estoy vinculando desde 
+                el home a las páginas de registro y login-->
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+            <!--El burger-menu, llamado así por su parecido involuntario con una hamburguesa, 
+                es un botón que su función es alternar un menú o barra de navegación que permite 
+                colapsarse detrás del botón o mostrarse en la pantalla. -->
+        </nav>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+        <!--La etiqueta <section> </section> define una sección de un documento y admite los atributos globales y de eventos en HTML.-->
+    <section class="banner">
+        <!--El atributo class especifica uno o más nombres de clase para un elemento 
+        y se utiliza principalmente para apuntar a una clase en una hoja de estilos.-->
+        <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+        <!--La etiqueta <img> se utiliza para incrustar una imagen en una página HTML.
+        Tiene dos atributos obligatorios: src: especifica la ruta a la imagen y 
+        alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede mostrar-->
+    </section>
+    <main>
+        <section class="last-visit">
+            <h3>Basado en tu última visita</h3>
+            <div class="products">
+                <!--La etiqueta <article> </article> especifica contenido independiente. 
+                Un artículo debe tener sentido por sí solo y debe ser posible distribuirlo independientemente del resto
+                del sitio. Caso de uso habitual: Publicación en el foro, Entrada de blog, Noticia y Cuadro de Producto como
+                el usado en este proyecto-->
+                <article>
+                    <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$6.770</p>
+                        <p class="discount">40% off</p>
+                        <h4 class="description">Cafetera Moulinex</h4>
+                    </div>
+                </article>
 
-                </div>
-            </section>
-<!--sección de ofertas en Mercado Liebre--> 
-            <section class="offers">
-                <h3>Ofertas</h3>
-                <div class="products">
-                    <article>
-                        <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$6.770</p>
-                            <p class="discount">40% off</p>
-                            <h4 class="description">Cafetera Moulinex</h4>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$230.000</p>
-                            <p class="discount">20% off</p>
-                            <h4 class="description">MacBook Pro 2019</h4>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$70.500</p>
-                            <p class="discount">10% off</p>
+                <article>
+                    <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$230.000</p>
+                        <p class="discount">20% off</p>
+                        <h4 class="description">MacBook Pro 2019</h4>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy"
+                        class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$70.500</p>
+                        <p class="discount">10% off</p>
                         <h4 class="description">Samsung Galaxy S10</h4>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
-                        <div class="main-article">
-                            <i class="fas fa-truck"></i>
-                            <p class="price">$23.200</p>
-                            <p class="discount">5% off</p>
-                            <h4 class="description">SmartTv Samsung 43"</h4>
-                        </div>
-                    </article>
-                </div>  
-            </section>
-        </main>
-<!--La etiqueta footer define un pie de página para un documento o sección.
-Un elemento normalmente contiene: información de autoría, información sobre derechos de autor,
-información de contacto, mapa del sitio, volver a los enlaces principales y documentos relacionados--> 
-        <footer>
-            
-        </footer>
-        
-    </body>
-<!--Terminó el body y lo que se vé en el viewports--> 
+                    </div>
+                </article>
+
+                <article>
+                    <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$23.200</p>
+                        <p class="discount">5% off</p>
+                        <h4 class="description">SmartTv Samsung 43"</h4>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!--sección de ofertas en Mercado Liebre-->
+        <section class="offers">
+            <h3>Ofertas</h3>
+            <div class="products">
+                <article>
+                    <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$6.770</p>
+                        <p class="discount">40% off</p>
+                        <h4 class="description">Cafetera Moulinex</h4>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/img-macbook-pro-2019.jpg" alt="MacBook" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$230.000</p>
+                        <p class="discount">20% off</p>
+                        <h4 class="description">MacBook Pro 2019</h4>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/img-samsung-galaxy-s10.jpg" alt="Teléfono Móvil Samsung Galaxy"
+                        class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$70.500</p>
+                        <p class="discount">10% off</p>
+                        <h4 class="description">Samsung Galaxy S10</h4>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/img-tv-samsung-smart.jpg" alt="SmartTv Samsung" class="product_img">
+                    <div class="main-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="price">$23.200</p>
+                        <p class="discount">5% off</p>
+                        <h4 class="description">SmartTv Samsung 43"</h4>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!--La etiqueta footer define un pie de página para un documento o sección.
+        Un elemento normalmente contiene: información de autoría, información sobre derechos de autor,
+        información de contacto, mapa del sitio, volver a los enlaces principales y documentos relacionados-->
+    <footer>
+
+    </footer>
+</body>
+<!--Terminó el body y lo que se vé en el viewports-->
 </html>
