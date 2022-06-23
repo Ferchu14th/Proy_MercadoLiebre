@@ -26,6 +26,10 @@ h3 {
     font-size: 24px;
 }
 
+h4 {
+    font-size: 24px;
+    text-align: center;
+}
 /*declaramos tamaño de la letra para los párrafos*/
 p {
     font-size: 12px;

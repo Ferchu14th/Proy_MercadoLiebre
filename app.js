@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 
 // se agrega en la clase 15 cuando incorporamos los html de login y register
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const HOST = process.env.HOST || 'localhost';
 
 // ruta de archivos estáticos
@@ -31,6 +31,7 @@ app.get('/register', (req,res)=>{
 //     console.log('servidor corriendo en el puerto 3000')
 // );
 // a partir de clase 15 lo cambia de esta manera:
+// y para Heroku/Eduflow lo pasamos al puerto 3001
 app.listen(PORT, ()=>{
     console.log(`Server running at http://${HOST}:${PORT}/`);
 });
