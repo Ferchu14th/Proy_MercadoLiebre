@@ -248,6 +248,7 @@ article div.main-article {
 div.top-header {
     display: flex;
     flex-wrap: wrap;
+}
 
     /*comentar*/
     main section div.products {
