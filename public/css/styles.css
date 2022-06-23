@@ -55,6 +55,7 @@ header {
 header div.logo,
 header .form {
     width: 50%;
+    justify-content: center;
 }
 
 header div.logo {
@@ -155,34 +156,35 @@ div.offers {
     width: 70%;
 }
 
-/*comentar*/
+
 .discount,
 .description {
     font-size: 16px;
     font-weight: normal;
 }
 
-/*comentar*/
+
 h3,
 .description {
     color: #666;
 }
 
-/*comentar*/
+
 .description {
     display: none;
     margin-top: 20px;
 }
 
-/*comentar*/
+
 section.banner img {
     width: 100%;
 }
 
-/*comentar*/
+
 main {
     width: 90%;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /*comentar*/
@@ -191,18 +193,18 @@ main section article {
     margin: 10px 0px;
 }
 
-/*comentar*/
+
 main section article img {
     width: 100%;
 }
 
-/*comentar*/
+
 main section article i,
 .discount {
     color: #39b54a;
 }
 
-/*comentar*/
+
 main section article i {
     display: block;
     font-size: 16px;
@@ -217,7 +219,7 @@ main section article i {
     top: -15px;
 }
 
-/*comentar*/
+
 main section h3 {
     margin: 20px 0px;
 }
@@ -250,6 +252,14 @@ div.top-header {
     flex-wrap: wrap;
 }
 
+div.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
     /*comentar*/
     main section div.products {
         display: flex;
@@ -270,12 +280,11 @@ div.top-header {
         width: 50%;
     }
 
-    /*modeliza iPad (Tablet 758x1024) a partir de 758 dejamos logo, barra de busqueda y compre en cuotas
-en una misma linea de bloques nowrap*/
+    /*modeliza iPad (Tablet 758x1024) */
     @media (min-width: 758px) {
-
-        
-
+        main section div.products article {
+            width: 33%;
+        }
         div .logo {
             width: 30%;
         }
