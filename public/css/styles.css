@@ -30,6 +30,7 @@ h4 {
     font-size: 24px;
     text-align: center;
 }
+
 /*declaramos tamaño de la letra para los párrafos*/
 p {
     font-size: 12px;
@@ -239,6 +240,22 @@ article div.main-article {
     padding: 15px;
 }
 
+footer {
+    text-align: center;
+    padding: 10%;
+    background-color: white;
+    border: solid 2px #ebebeb;
+
+}
+
+.icon_footer {
+    color: #03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: color, 0.5s;
+
+}
+
 /*comentar*/
 @media (min-width: 361px) {
     main section article .description {
@@ -256,7 +273,7 @@ div.top-header {
     flex-wrap: wrap;
 }
 
-div.box{
+div.box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -264,45 +281,46 @@ div.box{
     padding: 10px;
 }
 
-    /*comentar*/
-    main section div.products {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+/*comentar*/
+main section div.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
-    /*comentar*/
+/*comentar*/
+main section div.products article {
+    width: 45%;
+
+}
+
+.price,
+.discount {
+    width: 50%;
+}
+
+/*modeliza iPad (Tablet 758x1024) */
+@media (min-width: 758px) {
     main section div.products article {
-        width: 45%;
-
+        width: 33%;
     }
 
-    .price,
-    .discount {
+    div .logo {
+        width: 30%;
+    }
+
+    div .form {
         width: 50%;
     }
 
-    /*modeliza iPad (Tablet 758x1024) */
-    @media (min-width: 758px) {
-        main section div.products article {
-            width: 33%;
-        }
-        div .logo {
-            width: 30%;
-        }
-
-        div .form {
-            width: 50%;
-        }
-
-        div .centro {
-            width: 40%;
-        }
-
-        main section div.products article {
-            width: 22%;
-
-        }
+    div .centro {
+        width: 40%;
     }
+
+    main section div.products article {
+        width: 22%;
+
+    }
+}

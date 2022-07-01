@@ -38,7 +38,7 @@ del dispositivo "width=device-width" en el dispositivo que ahora estamos-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
-    <!--La etiqueta (tag) "body" define el cuerpo del documento. El elemento contiene todo el contenido de un 
+<!--La etiqueta (tag) "body" define el cuerpo del documento. El elemento contiene todo el contenido de un 
 documento HTML, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.-->
 
 <body>
@@ -49,7 +49,7 @@ documento HTML, como encabezados, párrafos, imágenes, hipervínculos, tablas, 
         <div class="top-header">
             <div class="logo">
                 <a href="/">
-                <img src="images/logo-mercado-liebre.svg" width=100% alt="Logo de Mercado Liebre">
+                    <img src="images/logo-mercado-liebre.svg" width=100% alt="Logo de Mercado Liebre">
                 </a>
             </div>
             <!--La etiqueta "div" define una división o una sección en un documento HTML. Tiene un comienzo y fin
@@ -59,20 +59,20 @@ documento HTML, como encabezados, párrafos, imágenes, hipervínculos, tablas, 
     luego veremos que vamos al archivo CSS y vamos a declarar form (aprox. linea 51 del style.css)
     La etiqueta se diseña fácilmente mediante el atributo "class" o "id".-->
             <div class="form" action="#" method="GET">
-            <!--La etiqueta <input> especifica un campo de entrada donde el usuario puede introducir datos.
+                <!--La etiqueta <input> especifica un campo de entrada donde el usuario puede introducir datos.
 El elemento se puede mostrar de varias maneras, dependiendo del atributo type
 Los diferentes tipos de entrada son los siguientes: <input type="radio"><input type="file">
 <input type="password"> <input type="submit" value="Submit"> ¡Mira el atributo type para ver ejemplos para cada tipo de entrada!
 https://www.w3schools.com/tags/att_input_type.asp -->
-            <input class="input-search" type="text" placeholder="Buscar productos, marcas y más">
-            <button class="button-search"><i class="fa fa-search"></i></button>
+                <input class="input-search" type="text" placeholder="Buscar productos, marcas y más">
+                <button class="button-search"><i class="fa fa-search"></i></button>
             </div>
             <!--Utilización de íconos-->
             <p class="centro"><i class="fas fa-hand-holding-usd">
-            </i>Comprá en cuotas y sin tarjeta de crédito
+                </i>Comprá en cuotas y sin tarjeta de crédito
             </p>
         </div>
-            <!--La etiqueta <nav> define un conjunto de vínculos de navegación-->
+        <!--La etiqueta <nav> define un conjunto de vínculos de navegación-->
         <nav>
             <!--La etiqueta <ul> define una lista desordenada. La utilizamos junto con la etiqueta <li> para crear listas desordenadas y
                 odemos darle estilo desde CSS-->
@@ -98,7 +98,7 @@ https://www.w3schools.com/tags/att_input_type.asp -->
             <i class="fa fa-bars burger"></i>
         </div>
     </header>
-        <!--La etiqueta <section> </section> define una sección de un documento y admite los atributos globales y de eventos en HTML.-->
+    <!--La etiqueta <section> </section> define una sección de un documento y admite los atributos globales y de eventos en HTML.-->
     <section class="banner">
         <!--El atributo class especifica uno o más nombres de clase para un elemento 
         y se utiliza principalmente para apuntar a una clase en una hoja de estilos.-->
@@ -206,10 +206,32 @@ https://www.w3schools.com/tags/att_input_type.asp -->
         Un elemento normalmente contiene: información de autoría, información sobre derechos de autor,
         información de contacto, mapa del sitio, volver a los enlaces principales y documentos relacionados-->
     <footer>
-        <br>    
-        <h4>Pie de Página de Mercado Liebre - Proximamente</h4>
-        <br>
+        <div class="opciones_footer">
+            <section>
+                <div class="icon_footer"><i class="fas fa-credit-card"></i></div>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                    siempre es seguro!</p>
+            </section>
+            <section>
+                <div class="icon_footer"><i class="fas fa-gift"></i></div>
+                <h4>Envío gratis desde $ 3.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section>
+                <div class="icon_footer"><i class="fas fa-user-shield"></i></div>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegidx.</p>
+            </section>
+        </div>
+        <seccion>
+            <p class="copy">Copyright © 1999-2022 MercadoLiebre S.R.L.</p>
+        </seccion>
+
     </footer>
 </body>
 <!--Terminó el body y lo que se vé en el viewports-->
+
 </html>
